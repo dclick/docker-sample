@@ -1,1 +1,1 @@
-project de exemplo para apresentação sobre o docker
+Projeto de exemplo para apresentação sobre o docker
