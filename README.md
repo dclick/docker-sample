@@ -1,1 +1,1 @@
-Projeto de exemplo para apresentação de versão com docker
+Apresentação SESC
