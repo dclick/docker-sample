@@ -1,1 +1,1 @@
-Projeto de exemplo para apresentação de versão com docker - nova versão
+Projeto de exemplo para apresentação de versão com docker
