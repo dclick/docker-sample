@@ -8,7 +8,7 @@ dependencies:
 
 test:
   override:
-    - sed -i '' 's/VERSION/$CIRCLE_BRANCH-1.0.$CIRCLE_BUILD_NUM/g' code/app.py
+    - sed -i 's/VERSION/$CIRCLE_BRANCH-1.0.$CIRCLE_BUILD_NUM/g' code/app.py
     - docker login -e="infra@redspark.io" -u="redsparkinfra" -p="redsparkinfra"
     - docker build -t redspark/docker-sample:$CIRCLE_BRANCH-1.0.$CIRCLE_BUILD_NUM .
     - docker push redspark/docker-sample:$CIRCLE_BRANCH-1.0.$CIRCLE_BUILD_NUM
