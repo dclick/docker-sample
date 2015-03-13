@@ -1,4 +1,11 @@
 web:
-  image: redspark/docker-sample:1.0.9
+  image: redspark/docker-sample:1.0.12
   ports:
     - 8000:8000
+  links:
+    - gestor
+
+gestor:
+  image: redspark/docker-sample:1.0.11
+  ports:
+    - 8001:8000
