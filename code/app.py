@@ -16,7 +16,7 @@ version = "VERSION"
 @app.route('/version', methods=['GET'])
 def read_hook():
     if request.method == 'GET':
-        return Response(json.dumps(time.strftime("%H:%M:%S") + " - " + version), mimetype='application/json')
+        return Response(json.dumps(time.strftime("%H:%M:%S") + " # " + version), mimetype='application/json')
 
 def main(argv):
     app.debug = True
