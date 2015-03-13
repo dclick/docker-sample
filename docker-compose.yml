@@ -1,4 +1,4 @@
 web:
-  image: redspark/docker-sample:master-1.0.4
+  image: redspark/docker-sample:master-1.0.5
   ports:
     - 8000:8000

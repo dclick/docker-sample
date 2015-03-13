@@ -8,6 +8,7 @@ import sys
 import getopt
 import sqlite3
 import os
+import time
 
 app = Flask(__name__)
 version = "VERSION"
@@ -15,7 +16,7 @@ version = "VERSION"
 @app.route('/version', methods=['GET'])
 def read_hook():
     if request.method == 'GET':
-        return Response(json.dumps(version), mimetype='application/json')
+        return Response(json.dumps(time.strftime("%H:%M:%S") + " - " + version), mimetype='application/json')
 
 def main(argv):
     app.debug = True
