@@ -1,11 +1,4 @@
 web:
-  image: redspark/docker-sample:master-1.0.7
+  image: redspark/docker-sample:1.0.9
   ports:
     - 8000:8000
-  links:
-    - web2
-
-web2:
-  image: redspark/docker-sample:master-1.0.6
-  ports:
-    - 8001:8000
