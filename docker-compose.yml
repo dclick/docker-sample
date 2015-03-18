@@ -1,11 +1,13 @@
 web:
-  image: redspark/docker-sample:1.0.12
+  image: redspark/docker-sample:1.0.14
   ports:
     - 8000:8000
+  environment:
+    DATA_SOURCE: "mysql://127.0.0.1:3306"
   links:
     - gestor
 
 gestor:
-  image: redspark/docker-sample:1.0.11
+  image: redspark/docker-sample:1.0.13
   ports:
     - 8001:8000
